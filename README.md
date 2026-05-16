@@ -29,7 +29,7 @@ npx ghana-lead-finder
 Or straight from GitHub, no npm publish required:
 
 ```bash
-npx github:<your-user>/<your-repo>
+npx github:steverosky/ghana-lead-finder
 ```
 
 Either command copies the skill into your personal Claude skills directory:
@@ -56,7 +56,7 @@ The package is npx-ready (`bin` + shebang, `files` whitelist, ~11 kB). The npm n
 npm publish        # runs prepublishOnly check, publishes public
 ```
 
-For the GitHub route instead, just push this repo public — `npx github:user/repo` runs `bin/install.js` with no registry needed.
+The GitHub route is already live at <https://github.com/steverosky/ghana-lead-finder> — `npx github:steverosky/ghana-lead-finder` runs `bin/install.js` with no registry needed.
 
 ## Usage
 

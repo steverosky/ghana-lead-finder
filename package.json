@@ -3,6 +3,14 @@
   "version": "1.0.0",
   "description": "Claude skill that finds and qualifies local business prospects in Ghana that may need a website or stronger online presence.",
   "author": "Steve",
+  "homepage": "https://github.com/steverosky/ghana-lead-finder#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steverosky/ghana-lead-finder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/steverosky/ghana-lead-finder/issues"
+  },
   "bin": {
     "ghana-lead-finder": "bin/install.js"
   },
