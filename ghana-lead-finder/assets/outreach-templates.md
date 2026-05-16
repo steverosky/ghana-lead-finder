@@ -2,6 +2,8 @@
 
 Short, WhatsApp-first openers for the qualified leads. WhatsApp is the dominant business channel in Ghana — keep messages brief, polite, and concrete. Only use these when the user asks for outreach help.
 
+> ⚠️ **Anti-spam — read first.** These are **one-to-one, manually sent** openers to individually qualified businesses, using **public business contact numbers only**. Do **not** bulk-send, automate, mass-broadcast, or import these into a blasting tool. Bulk/unsolicited WhatsApp messaging breaches the [WhatsApp Business Messaging Policy](https://www.whatsapp.com/legal/business-policy/) (risking number bans) and unsolicited commercial messaging can create exposure under Ghana's Data Protection Act, 2012 (Act 843) and Electronic Communications Act, 2008 (Act 775). Personalise every message, message only businesses with a genuine fit, send during business hours, and stop on any opt-out. The skill must surface this caveat whenever it outputs outreach copy.
+
 ## WhatsApp — social-only business (no website)
 
 > Hello 👋 I came across {business} on {Facebook/Instagram} — love what you're doing in {area}. I build simple, mobile-friendly websites for businesses like yours so customers can find you on Google and order/book directly (with WhatsApp + MoMo). Would a quick look at a sample be useful?

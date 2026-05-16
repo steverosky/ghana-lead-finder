@@ -1,1 +1,1 @@
-score,business,category,area,distance_km,website_status,website_url,social_urls,phone,whatsapp,source_urls,why_prospect,confidence,notes
+score,business,category,area_proximity,website_status,website_url,social_urls,phone,whatsapp_status,source_urls,why_prospect,confidence,notes

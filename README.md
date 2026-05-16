@@ -8,11 +8,12 @@ GhanaLeadFinder finds nearby shops, salons, barbershops, chop bars, restaurants,
 
 Generic prospecting tools miss how Ghanaian SMEs actually operate. GhanaLeadFinder is built around the local reality:
 
-- Most SMEs run entirely on **Facebook + WhatsApp Business + MoMo** with no website at all — these are the highest-value prospects, and the scoring treats them that way.
-- Phone and network parsing for **Ghana numbers** (`+233` / `0XX`, MTN / Telecel / AirtelTigo).
-- Discovery across **Ghana-relevant sources**: Google Business, Jiji.com.gh, Tonaton, BusinessGhana, GhanaYello.
-- Default coverage of **Accra, Kumasi, Takoradi, Tamale, Cape Coast** and their key neighbourhoods.
-- **WhatsApp-first outreach** templates tuned to how Ghanaian owners buy.
+- Most SMEs run entirely on **Facebook + WhatsApp + MoMo** with no website at all — a deterministic point rubric treats these as the highest-value prospects.
+- Phone and network parsing/normalisation for **Ghana numbers** (`+233`/`0XX`, MTN / Telecel / AirtelTigo); WhatsApp is reported as *likely*, never asserted.
+- Discovery across **Ghana-relevant sources**: Google Business, Jiji.com.gh, Tonaton, BusinessGhana, GhanaYello — with `WebSearch` → `WebFetch` → browser-skill fallbacks and a no-fabrication rule.
+- **Area/neighbourhood proximity** (honest — there's no geocoding, so no fake kilometre figures) across Accra, Kumasi, Takoradi, Tamale, Cape Coast.
+- An **anti-stale gate** (no `Hot` without recent activity) and a stated discovery-bias limitation in every run.
+- **WhatsApp-first outreach** templates with built-in anti-spam guardrails (1:1, public numbers only).
 - Respects **Ghana's Data Protection Act, 2012 (Act 843)** — public business contact info only.
 
 ## Install
@@ -38,7 +39,7 @@ Restart Claude Code or start a new session if the skill does not appear immediat
 The skill auto-activates when relevant, or invoke it explicitly:
 
 ```text
-Find gyms and boutiques within 15 km of East Legon, Accra that may need a website, and return the lead sheet in chat.
+Find gyms and boutiques in East Legon, Accra (and adjacent areas) that may need a website, and return the lead sheet in chat.
 ```
 
 ```text
@@ -49,9 +50,10 @@ It answers in the same language as the prompt (default English; Twi/Ga/Ewe/Pidgi
 
 ## What's in the box
 
-- `ghana-lead-finder/SKILL.md` — the skill definition and research/scoring workflow.
+- `ghana-lead-finder/SKILL.md` — the skill definition: tools/fallbacks, research workflow, point rubric, output contract.
 - `ghana-lead-finder/assets/lead-template.csv` — CSV header for file output.
-- `ghana-lead-finder/assets/outreach-templates.md` — WhatsApp and phone outreach scripts for Ghanaian SMEs.
+- `ghana-lead-finder/assets/outreach-templates.md` — WhatsApp/phone scripts + anti-spam guardrails.
+- `ghana-lead-finder/examples/sample-run.md` — known-good output shape (regression reference).
 - `bin/install.js` — installs the skill into `~/.claude/skills/`.
 
 ## Compliance
