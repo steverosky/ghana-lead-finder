@@ -20,19 +20,11 @@ Generic prospecting tools miss how Ghanaian SMEs actually operate. GhanaLeadFind
 
 ### One command (recommended)
 
-Once published to npm:
-
-```bash
-npx ghana-lead-finder
-```
-
-Or straight from GitHub, no npm publish required:
-
-```bash
+```bash or tell claude code to run in chat
 npx github:steverosky/ghana-lead-finder
 ```
 
-Either command copies the skill into your personal Claude skills directory:
+Command copies the skill into your personal Claude skills directory:
 
 ```
 ~/.claude/skills/ghana-lead-finder
