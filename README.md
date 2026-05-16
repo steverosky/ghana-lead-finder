@@ -18,13 +18,21 @@ Generic prospecting tools miss how Ghanaian SMEs actually operate. GhanaLeadFind
 
 ## Install
 
-From this folder:
+### One command (recommended)
+
+Once published to npm:
 
 ```bash
-node bin/install.js
+npx ghana-lead-finder
 ```
 
-This installs the skill to your personal Claude skills directory:
+Or straight from GitHub, no npm publish required:
+
+```bash
+npx github:<your-user>/<your-repo>
+```
+
+Either command copies the skill into your personal Claude skills directory:
 
 ```
 ~/.claude/skills/ghana-lead-finder
@@ -32,7 +40,23 @@ This installs the skill to your personal Claude skills directory:
 
 (On Windows: `C:\Users\<you>\.claude\skills\ghana-lead-finder`.)
 
+### From a local clone
+
+```bash
+node bin/install.js
+```
+
 Restart Claude Code or start a new session if the skill does not appear immediately. To scope it to a single project instead, copy the `ghana-lead-finder/` folder into that repo's `.claude/skills/` directory.
+
+### Publishing (maintainer)
+
+The package is npx-ready (`bin` + shebang, `files` whitelist, ~11 kB). The npm name `ghana-lead-finder` is currently free. To publish:
+
+```bash
+npm publish        # runs prepublishOnly check, publishes public
+```
+
+For the GitHub route instead, just push this repo public — `npx github:user/repo` runs `bin/install.js` with no registry needed.
 
 ## Usage
 

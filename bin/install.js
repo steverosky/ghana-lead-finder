@@ -36,5 +36,6 @@ if (!fs.existsSync(source)) {
 fs.rmSync(target, { recursive: true, force: true });
 copyDir(source, target);
 
-console.log(`Installed Claude skill: ${target}`);
-console.log("Restart Claude Code or start a new session if the skill does not appear immediately.");
+console.log(`✓ GhanaLeadFinder installed: ${target}`);
+console.log("  Restart Claude Code (or start a new session), then ask it to");
+console.log('  "find salons and spas in East Legon, Accra that need a website".');
