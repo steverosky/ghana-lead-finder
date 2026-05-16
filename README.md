@@ -18,9 +18,9 @@ Generic prospecting tools miss how Ghanaian SMEs actually operate. GhanaLeadFind
 
 ## Install
 
-### One command (recommended)
+### One command or tell claude code to run in chat(recommended)
 
-```bash or tell claude code to run in chat
+```bash
 npx github:steverosky/ghana-lead-finder
 ```
 
